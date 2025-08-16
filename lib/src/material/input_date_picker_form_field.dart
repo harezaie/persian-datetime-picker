@@ -273,7 +273,7 @@ class _InputDatePickerFormFieldState
           labelText: widget.fieldLabelText ?? localizations.dateInputLabel,
         ).applyDefaults(
           inputTheme
-              .merge(datePickerTheme.inputDecorationTheme)
+              .merge(datePickerTheme.inputDecorationTheme as InputDecorationThemeData?)
               .copyWith(border: effectiveInputBorder),
         ),
         validator: _validateDate,
